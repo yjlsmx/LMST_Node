@@ -1,0 +1,105 @@
+1.从串口接收到的指令都会通过SmartTuna.c里定义的RegStruct Reg结构体变量传递给控制，
+即通讯程序通过写和读结构体变量Reg来实现对模块的运动控制和状态反馈，
+串口接收函数： PacketWrite  串口发送函数：PacketRead
+
+control节点：
+typedef struct
+{
+	u8 Speed;				//尾鳍速度  范围 0~15
+	u8 Direct;  			//尾鳍方向 范围 0~14
+	u8 Mode;
+	int16_t ServoOffset[3]; //尾鳍偏移量调整  范围-500~500
+}RegStruct;
+
+ServoMotor节点：
+typedef struct
+{
+	u8 LServo;  //左舵机角度 范围 0~14
+	u8 RServo;	//右舵机角度 范围 0~14
+    u8 LMotor;	//左电机转速 范围 0~14
+	u8 RMotor;	//右电机转速  范围 0~14
+}RegStruct;
+
+Diving节点：
+typedef struct
+{
+	u8 Pump; //充气时间 0~255 s 当值为0时放气
+}RegStruct;
+
+2.wrtnode 资料：
+http://wiki.wrtnode.cc/index.php?title=首页
+
+2016.10.8
+使用freeRTOS重构代码
+CPGCore.c 			cpg 算法
+SmartTuna.c    		程序主逻辑
+LMST_MotionCtrl.c   运动控制模块
+LMST_PWM.c			pwm波控制
+
+2016.10.27
+can 接收当处理不及时时，从中断fifo中获取新数据取代旧的一帧数据！！！！！！
+
+2016.10.28
+can 总线添加sendto，和recvfrom，can id不分目标地址和源地址，可以通过划分id号来实现
+
+2016.10.31
+串口传输层数据报协议:
+/ 包头       / 长度（数据域）/     数据域    / 数据域校验和 /    包尾   /
+/ 0xFA 0xFB  /   2Bytes      /  < 65536Bytes /   1Bytes     / 0xFC 0xFD /
+
+2016.11.2
+应用层约定：
+开头4字节为类型号
+0：二进制协议
+1：json协议
+2：带can总线的二进制协议，类型号后插入4字节的can id
+3：带can总线的json协议，类型号后插入4字节的can id
+4：json协议调试信息
+5：json协议错误信息
+
+程序更新：
+6：命令 -> stm32   json
+7：申请 -> pc      json
+8：数据包 -> stm32 hex
+9：结束 -> pc	   json
+
+2016.11.2
+看门狗。。。 log。。。
+目前的规划是以单关节鱼作为载体，验证、储备、实现仿生滑翔水下机器人的软件架构和和核心软件技术；
+
+2016.11.17
+完成头舱和尾舱的设计；
+
+2016.11.25
+can换成pin11 pin12，基本完成12月中旬前功能设计；
+
+2016.12.14
+串口波特率改为230400
+
+2016.12.19
+添加了mpu模块
+
+2016.12.22
+添加了本地控制和浮力舱模块
+
+2016.12.22
+优化了uudp的接收，解决串口方面的丢包问题
+
+2017.01.23
+bootloader 在flash里设标志来判断是否已经烧好应用程序，以此来判断是否要跳转；
+！！！！！改用在bootloader 上启动看门狗的方法，当没烧应用程序时看门狗自动复位到bootloader
+bootloader不开看门狗，开会导致固件更新时运算量过大来不及喂狗；
+
+2017.01.25
+改进了LM_queue_m3_FreeRtos.c队列的锁，之前使用的挂起系统的方法会导致性能下降；
+
+2017.02.04
+调通了bootloader 固件更新功能（尾舱）
+
+2017.02.06
+当wrtnode 连接外网，有流量时会导致本地通讯延时很大，导致固件更新失败；
+
+
+
+
+
