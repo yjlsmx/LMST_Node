@@ -1,0 +1,434 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.20.0.0
+Copyright (C) 2016 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 黄 yongjian, lsmx, LIC=LJWAR-K7XPK-MQS0F-67SUT-52IW8-FHLFU
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.20
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 2 (build 183)
+Assembler:       Armasm.exe V5.06 update 2 (build 183)
+Linker/Locator:  ArmLink.exe V5.06 update 2 (build 183)
+Library Manager: ArmAr.exe V5.06 update 2 (build 183)
+Hex Converter:   FromElf.exe V5.06 update 2 (build 183)
+CPU DLL:         SARMCM3.DLL V5.20
+Dialog DLL:      DCM.DLL V1.13.7.0
+Target DLL:      Segger\JL2CM3.dll V2.99.20.0
+Dialog DLL:      TCM.DLL V1.14.9.0
+ 
+<h2>Project:</h2>
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\prj\STM32_FreeRTOS_User.uvprojx
+Project File Date:  02/14/2017
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 2 (build 183)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build Project 'STM32_FreeRTOS_User' - Target 'Target 1'
+compiling list.c...
+compiling heap_2.c...
+compiling port.c...
+compiling queue.c...
+compiling tasks.c...
+compiling CPGCore.c...
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LM_BuoyantDevices.h(12): warning:  #1295-D: Deprecated declaration YJ_ButdInit - give arg types
+  YJ_ButdCore * YJ_ButdInit();
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LM_BuoyantDevices.h(32): warning:  #1-D: last line of file ends without a newline
+  int32_t SetButdState(YJ_ButdCore * h, int32_t s);
+..\User\CPGCore.c: 2 warnings, 0 errors
+compiling SmartTuna.c...
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LM_BuoyantDevices.h(12): warning:  #1295-D: Deprecated declaration YJ_ButdInit - give arg types
+  YJ_ButdCore * YJ_ButdInit();
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LM_BuoyantDevices.h(32): warning:  #1-D: last line of file ends without a newline
+  int32_t SetButdState(YJ_ButdCore * h, int32_t s);
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LMST_HeadNode.h(8): warning:  #1-D: last line of file ends without a newline
+  void YJ_InitLed();
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LMST_HeadNode.h(8): warning:  #1295-D: Deprecated declaration YJ_InitLed - give arg types
+  void YJ_InitLed();
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LMST_NodeCommon.h(100): warning:  #1295-D: Deprecated declaration YJ_IwdgInit - give arg types
+  void YJ_IwdgInit();
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LMST_TailNode.h(5): warning:  #1-D: last line of file ends without a newline
+  void YJ_TailNodeTask( void *parameters );
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LMST_SensorNode.h(4): warning:  #1-D: last line of file ends without a newline
+  void YJ_SensorNodeTask( void *parameters );
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LMST_HeadNode_LocalCtrl.h(4): warning:  #1-D: last line of file ends without a newline
+  void YJ_HeadNodeTask_LocalCtrl( void *parameters );
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LMST_DivingNode.h(4): warning:  #1-D: last line of file ends without a newline
+  void YJ_DivingNodeTask( void *parameters );
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\SmartTuna.c(70): warning:  #167-D: argument of type "signed char *" is incompatible with parameter of type "const char *const"
+  	xTaskCreate( MainTask, ( signed portCHAR * ) "MainTask", 
+..\User\SmartTuna.c: 10 warnings, 0 errors
+compiling LMST_MotionCtrl.c...
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LMST_Pwm.h(33): warning:  #1-D: last line of file ends without a newline
+   
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LM_BuoyantDevices.h(12): warning:  #1295-D: Deprecated declaration YJ_ButdInit - give arg types
+  YJ_ButdCore * YJ_ButdInit();
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LM_BuoyantDevices.h(32): warning:  #1-D: last line of file ends without a newline
+  int32_t SetButdState(YJ_ButdCore * h, int32_t s);
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\OnChip.h(29): warning:  #1295-D: Deprecated declaration YJ_GetRunMode - give arg types
+  int32_t YJ_GetRunMode();
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\OnChip.h(31): warning:  #1295-D: Deprecated declaration testFlash - give arg types
+  void testFlash();
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LMST_MotionCtrl.c(87): warning:  #177-D: variable "S" was declared but never referenced
+  	double 				S[JointCount];
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LMST_MotionCtrl.c(136): warning:  #167-D: argument of type "signed char *" is incompatible with parameter of type "const char *const"
+  	xTaskCreate( Task, ( signed portCHAR * ) "YJ_MtctTask", 
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LMST_MotionCtrl.c(62): warning:  #177-D: function "YJ_MtctTask_TailNode" was declared but never referenced
+  static void YJ_MtctTask_TailNode( void *parameters )
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LMST_MotionCtrl.c(85): warning:  #177-D: function "YJ_MtctTask_ServoMotorNode" was declared but never referenced
+  static void YJ_MtctTask_ServoMotorNode( void *parameters )
+..\User\LMST_MotionCtrl.c: 9 warnings, 0 errors
+compiling LM_queue_m3_FreeRtos.c...
+compiling LMST_Pwm.c...
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LMST_Pwm.h(33): warning:  #1-D: last line of file ends without a newline
+   
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LM_BuoyantDevices.h(12): warning:  #1295-D: Deprecated declaration YJ_ButdInit - give arg types
+  YJ_ButdCore * YJ_ButdInit();
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LM_BuoyantDevices.h(32): warning:  #1-D: last line of file ends without a newline
+  int32_t SetButdState(YJ_ButdCore * h, int32_t s);
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LMST_Pwm.c(112): warning:  #177-D: function "NVICInitialize" was declared but never referenced
+  static void NVICInitialize(void)
+..\User\LMST_Pwm.c: 4 warnings, 0 errors
+compiling LM_Uudp.c...
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LM_BuoyantDevices.h(12): warning:  #1295-D: Deprecated declaration YJ_ButdInit - give arg types
+  YJ_ButdCore * YJ_ButdInit();
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LM_BuoyantDevices.h(32): warning:  #1-D: last line of file ends without a newline
+  int32_t SetButdState(YJ_ButdCore * h, int32_t s);
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LM_Uudp.c(129): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *"
+  	HiEnQueue_nolock((h->RecvTmp + 4), h->RecvPackLen, h->RecvQue);
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LM_Uudp.c(196): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *"
+  			   !Checksum(h->RecvTmp, h->ItDataLen)) 
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LM_Uudp.c(265): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *"
+  	h->RecvQue 	= HiCreateQueue(h->RecvBuf_que , sizeof(h->RecvBuf_que));
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LM_Uudp.c(386): warning:  #1-D: last line of file ends without a newline
+  			       
+..\User\LM_Uudp.c: 6 warnings, 0 errors
+compiling LM_Cudp_m3.c...
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LM_BuoyantDevices.h(12): warning:  #1295-D: Deprecated declaration YJ_ButdInit - give arg types
+  YJ_ButdCore * YJ_ButdInit();
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LM_BuoyantDevices.h(32): warning:  #1-D: last line of file ends without a newline
+  int32_t SetButdState(YJ_ButdCore * h, int32_t s);
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LM_Cudp_m3.c(644): warning:  #167-D: argument of type "signed char *" is incompatible with parameter of type "const char *const"
+  	xTaskCreate( CudpTask, ( signed portCHAR * ) "CudpTask", 
+..\User\LM_Cudp_m3.c: 3 warnings, 0 errors
+compiling cJSON.c...
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\cJSON.c(81): warning:  #223-D: function "strlen" declared implicitly
+      len = strlen(str) + 1;
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\cJSON.c(83): warning:  #1293-D: assignment in condition
+      if (!(copy = (char *)
+JSON_malloc(len))) {
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\cJSON.c(87): warning:  #223-D: function "memcpy" declared implicitly
+      memcpy(copy, str, len);
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\cJSON.c(98): warning:  #223-D: function "memset" declared implicitly
+          memset(node, 0, sizeof(cJSON));
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\cJSON.c(134): warning:  #550-D: variable "sign" was set but never used
+      double n = 0, sign = 1, scale = 0;
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\cJSON.c(135): warning:  #550-D: variable "signsubscale" was set but never used
+      int subscale = 0, signsubscale = 1;
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\cJSON.c(413): warning:  #1293-D: assignment in condition
+      while ((token = *ptr) && ++len) {
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\cJSON.c(414): warning:  #223-D: function "strchr" declared implicitly
+          if (
+JSON_strchr("\"\\\b\f\n\r\t", token)) {
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\cJSON.c(569): warning:  #223-D: function "strncmp" declared implicitly
+      if (!strncmp(value, "null", 4))    {
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\cJSON.c(681): warning:  #1293-D: assignment in condition
+          if (!(new_item = cJSON_New_Item())) {
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\cJSON.c(723): warning:  #223-D: function "strcpy" declared implicitly
+              strcpy(out, "[]");
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\cJSON.c(736): warning:  #223-D: function "memset" declared implicitly
+      memset(entries, 0, numentries * sizeof(char *));
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\cJSON.c(745): warning:  #223-D: function "strlen" declared implicitly
+              len += strlen(ret) + 2 + (fmt ? 1 : 0);
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\cJSON.c(779): warning:  #223-D: function "strcpy" declared implicitly
+          strcpy(ptr, entries[i]);
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\cJSON.c(780): warning:  #223-D: function "strlen" declared implicitly
+          ptr += strlen(entries[i]);
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\cJSON.c(846): warning:  #1293-D: assignment in condition
+          if (!(new_item = cJSON_New_Item())) {
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\cJSON.c(935): warning:  #223-D: function "memset" declared implicitly
+      memset(entries, 0, sizeof(char *)*numentries);
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\cJSON.c(951): warning:  #223-D: function "strlen" declared implicitly
+              len += strlen(ret) + strlen(str) + 2 + (fmt ? 2 + depth : 0);
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\cJSON.c(998): warning:  #223-D: function "strcpy" declared implicitly
+          strcpy(ptr, names[i]);
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\cJSON.c(999): warning:  #223-D: function "strlen" declared implicitly
+          ptr += strlen(names[i]);
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\cJSON.c(1081): warning:  #223-D: function "memcpy" declared implicitly
+      memcpy(ref, item, sizeof(cJSON));
+..\User\cJSON.c: 21 warnings, 0 errors
+compiling LM_Common.c...
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LM_BuoyantDevices.h(12): warning:  #1295-D: Deprecated declaration YJ_ButdInit - give arg types
+  YJ_ButdCore * YJ_ButdInit();
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LM_BuoyantDevices.h(32): warning:  #1-D: last line of file ends without a newline
+  int32_t SetButdState(YJ_ButdCore * h, int32_t s);
+..\User\LM_Common.c: 2 warnings, 0 errors
+compiling LM_SystemClock.c...
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LM_BuoyantDevices.h(12): warning:  #1295-D: Deprecated declaration YJ_ButdInit - give arg types
+  YJ_ButdCore * YJ_ButdInit();
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LM_BuoyantDevices.h(32): warning:  #1-D: last line of file ends without a newline
+  int32_t SetButdState(YJ_ButdCore * h, int32_t s);
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LM_SystemClock.c(59): warning:  #167-D: argument of type "signed char *" is incompatible with parameter of type "const char *const"
+  	xTaskCreate( SysClockTask, ( signed portCHAR * ) "SysClockTask", 
+..\User\LM_SystemClock.c: 3 warnings, 0 errors
+compiling OnChip.c...
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LM_BuoyantDevices.h(12): warning:  #1295-D: Deprecated declaration YJ_ButdInit - give arg types
+  YJ_ButdCore * YJ_ButdInit();
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LM_BuoyantDevices.h(32): warning:  #1-D: last line of file ends without a newline
+  int32_t SetButdState(YJ_ButdCore * h, int32_t s);
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\OnChip.h(29): warning:  #1295-D: Deprecated declaration YJ_GetRunMode - give arg types
+  int32_t YJ_GetRunMode();
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\OnChip.h(31): warning:  #1295-D: Deprecated declaration testFlash - give arg types
+  void testFlash();
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\OnChip.c(166): warning:  #167-D: argument of type "int32_t *" is incompatible with parameter of type "u32 *"
+  		FlashWriteWords(
+J_RUN_MODE_FLAGS_FLASH_ADDR,(int32_t *)&mode, 1);
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\OnChip.c(176): warning:  #1-D: last line of file ends without a newline
+  		
+..\User\OnChip.c: 6 warnings, 0 errors
+compiling LMST_TailNode.c...
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LM_BuoyantDevices.h(12): warning:  #1295-D: Deprecated declaration YJ_ButdInit - give arg types
+  YJ_ButdCore * YJ_ButdInit();
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LM_BuoyantDevices.h(32): warning:  #1-D: last line of file ends without a newline
+  int32_t SetButdState(YJ_ButdCore * h, int32_t s);
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LMST_TailNode.h(5): warning:  #1-D: last line of file ends without a newline
+  void YJ_TailNodeTask( void *parameters );
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LMST_NodeCommon.h(100): warning:  #1295-D: Deprecated declaration YJ_IwdgInit - give arg types
+  void YJ_IwdgInit();
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LM_BatteryManager.h(9): warning:  #1295-D: Deprecated declaration YJ_BtmgGetParam - give arg types
+  int32_t YJ_BtmgGetParam();
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LM_BatteryManager.h(14): warning:  #1295-D: Deprecated declaration YJ_BtmgInit - give arg types
+  void YJ_BtmgInit();
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LM_BatteryManager.h(19): warning:  #1295-D: Deprecated declaration YJ_BtmgUnInit - give arg types
+  void YJ_BtmgUnInit();
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LM_BatteryManager.h(20): warning:  #1-D: last line of file ends without a newline
+  	
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LMST_TailNode.c(102): warning:  #1294-D: Old-style function ProcUpdataFirmWare
+  void ProcUpdataFirmWare(ret, msg)
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LMST_TailNode.c(135): warning:  #1-D: last line of file ends without a newline
+  }
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LMST_TailNode.c(109): warning:  #550-D: variable "ret" was set but never used
+  		int32_t 	ret = 1; 
+..\User\LMST_TailNode.c: 11 warnings, 0 errors
+compiling LMST_ServoMotorNode.c...
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LM_BuoyantDevices.h(12): warning:  #1295-D: Deprecated declaration YJ_ButdInit - give arg types
+  YJ_ButdCore * YJ_ButdInit();
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LM_BuoyantDevices.h(32): warning:  #1-D: last line of file ends without a newline
+  int32_t SetButdState(YJ_ButdCore * h, int32_t s);
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LMST_TailNode.h(5): warning:  #1-D: last line of file ends without a newline
+  void YJ_TailNodeTask( void *parameters );
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LMST_NodeCommon.h(100): warning:  #1295-D: Deprecated declaration YJ_IwdgInit - give arg types
+  void YJ_IwdgInit();
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LMST_ServoMotorNode.c(122): warning:  #1-D: last line of file ends without a newline
+  }
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LMST_ServoMotorNode.c(107): warning:  #550-D: variable "ret" was set but never used
+  		int32_t 	ret = 1; 
+..\User\LMST_ServoMotorNode.c: 6 warnings, 0 errors
+compiling LMST_HeadNode.c...
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LM_BuoyantDevices.h(12): warning:  #1295-D: Deprecated declaration YJ_ButdInit - give arg types
+  YJ_ButdCore * YJ_ButdInit();
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LM_BuoyantDevices.h(32): warning:  #1-D: last line of file ends without a newline
+  int32_t SetButdState(YJ_ButdCore * h, int32_t s);
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LMST_HeadNode.h(8): warning:  #1-D: last line of file ends without a newline
+  void YJ_InitLed();
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LMST_HeadNode.h(8): warning:  #1295-D: Deprecated declaration YJ_InitLed - give arg types
+  void YJ_InitLed();
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LMST_NodeCommon.h(100): warning:  #1295-D: Deprecated declaration YJ_IwdgInit - give arg types
+  void YJ_IwdgInit();
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LMST_HeadNode.c(130): warning:  #1-D: last line of file ends without a newline
+  }
+..\User\LMST_HeadNode.c: 6 warnings, 0 errors
+compiling LMST_NodeCommon.c...
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LM_BuoyantDevices.h(12): warning:  #1295-D: Deprecated declaration YJ_ButdInit - give arg types
+  YJ_ButdCore * YJ_ButdInit();
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LM_BuoyantDevices.h(32): warning:  #1-D: last line of file ends without a newline
+  int32_t SetButdState(YJ_ButdCore * h, int32_t s);
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LMST_NodeCommon.h(100): warning:  #1295-D: Deprecated declaration YJ_IwdgInit - give arg types
+  void YJ_IwdgInit();
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LM_BatteryManager.h(9): warning:  #1295-D: Deprecated declaration YJ_BtmgGetParam - give arg types
+  int32_t YJ_BtmgGetParam();
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LM_BatteryManager.h(14): warning:  #1295-D: Deprecated declaration YJ_BtmgInit - give arg types
+  void YJ_BtmgInit();
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LM_BatteryManager.h(19): warning:  #1295-D: Deprecated declaration YJ_BtmgUnInit - give arg types
+  void YJ_BtmgUnInit();
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LM_BatteryManager.h(20): warning:  #1-D: last line of file ends without a newline
+  	
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LMST_HeadNode.h(8): warning:  #1-D: last line of file ends without a newline
+  void YJ_InitLed();
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LMST_HeadNode.h(8): warning:  #1295-D: Deprecated declaration YJ_InitLed - give arg types
+  void YJ_InitLed();
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LMST_NodeCommon.c(81): warning:  #167-D: argument of type "signed char *" is incompatible with parameter of type "const char *const"
+  	xTaskCreate( IwdgTask, ( signed portCHAR * ) "IwdgTask", 
+..\User\LMST_NodeCommon.c: 10 warnings, 0 errors
+compiling LM_BatteryManager.c...
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LM_BuoyantDevices.h(12): warning:  #1295-D: Deprecated declaration YJ_ButdInit - give arg types
+  YJ_ButdCore * YJ_ButdInit();
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LM_BuoyantDevices.h(32): warning:  #1-D: last line of file ends without a newline
+  int32_t SetButdState(YJ_ButdCore * h, int32_t s);
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LM_BatteryManager.h(9): warning:  #1295-D: Deprecated declaration YJ_BtmgGetParam - give arg types
+  int32_t YJ_BtmgGetParam();
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LM_BatteryManager.h(14): warning:  #1295-D: Deprecated declaration YJ_BtmgInit - give arg types
+  void YJ_BtmgInit();
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LM_BatteryManager.h(19): warning:  #1295-D: Deprecated declaration YJ_BtmgUnInit - give arg types
+  void YJ_BtmgUnInit();
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LM_BatteryManager.h(20): warning:  #1-D: last line of file ends without a newline
+  	
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LM_BatteryManager.c(203): warning:  #167-D: argument of type "signed char *" is incompatible with parameter of type "const char *const"
+  	xTaskCreate( BtmgTask, ( signed portCHAR * ) "BtmgTask", 
+..\User\LM_BatteryManager.c: 7 warnings, 0 errors
+compiling LMST_SensorNode.c...
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LM_BuoyantDevices.h(12): warning:  #1295-D: Deprecated declaration YJ_ButdInit - give arg types
+  YJ_ButdCore * YJ_ButdInit();
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LM_BuoyantDevices.h(32): warning:  #1-D: last line of file ends without a newline
+  int32_t SetButdState(YJ_ButdCore * h, int32_t s);
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LMST_NodeCommon.h(100): warning:  #1295-D: Deprecated declaration YJ_IwdgInit - give arg types
+  void YJ_IwdgInit();
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LMST_SensorNode.h(4): warning:  #1-D: last line of file ends without a newline
+  void YJ_SensorNodeTask( void *parameters );
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LMST_SensorNode.c(78): warning:  #550-D: variable "ret" was set but never used
+  		int32_t 	ret = 1; 
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LMST_SensorNode.c(81): warning:  #177-D: variable "timeout" was declared but never referenced
+  		uint64_t    timeout;
+..\User\LMST_SensorNode.c: 6 warnings, 0 errors
+compiling LMST_HeadNode_LocalCtrl.c...
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LM_BuoyantDevices.h(12): warning:  #1295-D: Deprecated declaration YJ_ButdInit - give arg types
+  YJ_ButdCore * YJ_ButdInit();
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LM_BuoyantDevices.h(32): warning:  #1-D: last line of file ends without a newline
+  int32_t SetButdState(YJ_ButdCore * h, int32_t s);
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LMST_HeadNode_LocalCtrl.h(4): warning:  #1-D: last line of file ends without a newline
+  void YJ_HeadNodeTask_LocalCtrl( void *parameters );
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LMST_NodeCommon.h(100): warning:  #1295-D: Deprecated declaration YJ_IwdgInit - give arg types
+  void YJ_IwdgInit();
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LMST_HeadNode_LocalCtrl.c(90): warning:  #550-D: variable "SrcAddr" was set but never used
+  	int32_t ret, SrcAddr, i;
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LMST_HeadNode_LocalCtrl.c(204): warning:  #1-D: last line of file ends without a newline
+  }
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LMST_HeadNode_LocalCtrl.c(175): warning:  #177-D: variable "ret" was declared but never referenced
+  		int32_t 		ret = 1; 
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LMST_HeadNode_LocalCtrl.c(177): warning:  #177-D: variable "SrcAddr" was declared but never referenced
+  	  int32_t   	SrcAddr;
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LMST_HeadNode_LocalCtrl.c(179): warning:  #177-D: variable "xDelay" was declared but never referenced
+  	  const portTickType xDelay = pdMS_TO_TICKS(3);  //瀹?pdMS_TO_TICKS鐢?浜?灏?姣?绉?杞?鎴?鑺?鎷?鏁?
+..\User\LMST_HeadNode_LocalCtrl.c: 9 warnings, 0 errors
+compiling LM_Mpu.c...
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LM_BuoyantDevices.h(12): warning:  #1295-D: Deprecated declaration YJ_ButdInit - give arg types
+  YJ_ButdCore * YJ_ButdInit();
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LM_BuoyantDevices.h(32): warning:  #1-D: last line of file ends without a newline
+  int32_t SetButdState(YJ_ButdCore * h, int32_t s);
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LMST_NodeCommon.h(100): warning:  #1295-D: Deprecated declaration YJ_IwdgInit - give arg types
+  void YJ_IwdgInit();
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LM_Mpu.c(483): warning:  #940-D: missing return statement at end of non-void function "YJ_MpuInit"
+  }
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LM_Mpu.c(71): warning:  #177-D: variable "TX_DATA" was declared but never referenced
+  static unsigned char TX_DATA[4];  	 //鏄?绀?鎹?缂?瀛?鍖?
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LM_Mpu.c(73): warning:  #550-D: variable "test" was set but never used
+  static char  test=0; 				 //IIC鐢?鍒?
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LM_Mpu.c(97): warning:  #177-D: function "DATA_printf" was declared but never referenced
+  static void DATA_printf(uchar *s,short temp_data)
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LM_Mpu.c(204): warning:  #177-D: function "I2C_Ack" was declared but never referenced
+  static void I2C_Ack(void)
+..\User\LM_Mpu.c: 8 warnings, 0 errors
+compiling misc.c...
+compiling LM_BuoyantDevices.c...
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LM_BuoyantDevices.h(12): warning:  #1295-D: Deprecated declaration YJ_ButdInit - give arg types
+  YJ_ButdCore * YJ_ButdInit();
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LM_BuoyantDevices.h(32): warning:  #1-D: last line of file ends without a newline
+  int32_t SetButdState(YJ_ButdCore * h, int32_t s);
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LMST_TailNode.h(5): warning:  #1-D: last line of file ends without a newline
+  void YJ_TailNodeTask( void *parameters );
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LMST_NodeCommon.h(100): warning:  #1295-D: Deprecated declaration YJ_IwdgInit - give arg types
+  void YJ_IwdgInit();
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LM_BatteryManager.h(9): warning:  #1295-D: Deprecated declaration YJ_BtmgGetParam - give arg types
+  int32_t YJ_BtmgGetParam();
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LM_BatteryManager.h(14): warning:  #1295-D: Deprecated declaration YJ_BtmgInit - give arg types
+  void YJ_BtmgInit();
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LM_BatteryManager.h(19): warning:  #1295-D: Deprecated declaration YJ_BtmgUnInit - give arg types
+  void YJ_BtmgUnInit();
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LM_BatteryManager.h(20): warning:  #1-D: last line of file ends without a newline
+  	
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LM_BuoyantDevices.c(31): warning:  #188-D: enumerated type mixed with another type
+      GPIO_WriteBit(
+PIOA,
+PIO_Pin_0,0);
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LM_BuoyantDevices.c(32): warning:  #188-D: enumerated type mixed with another type
+      GPIO_WriteBit(
+PIOA,
+PIO_Pin_8,1);
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LM_BuoyantDevices.c(37): warning:  #188-D: enumerated type mixed with another type
+      GPIO_WriteBit(
+PIOA,
+PIO_Pin_0,1);
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LM_BuoyantDevices.c(38): warning:  #188-D: enumerated type mixed with another type
+      GPIO_WriteBit(
+PIOA,
+PIO_Pin_8,0);
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LM_BuoyantDevices.c(43): warning:  #188-D: enumerated type mixed with another type
+      GPIO_WriteBit(
+PIOA,
+PIO_Pin_0,1);
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LM_BuoyantDevices.c(44): warning:  #188-D: enumerated type mixed with another type
+      GPIO_WriteBit(
+PIOA,
+PIO_Pin_8,1);
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LM_BuoyantDevices.c(78): warning:  #111-D: statement is unreachable
+  	vTaskDelete(NULL);
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LM_BuoyantDevices.c(109): warning:  #167-D: argument of type "signed char *" is incompatible with parameter of type "const char *const"
+  	xTaskCreate( ButdTask, ( signed portCHAR * ) "ButdTask", 
+..\User\LM_BuoyantDevices.c: 16 warnings, 0 errors
+compiling LMST_DivingNode.c...
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LM_BuoyantDevices.h(12): warning:  #1295-D: Deprecated declaration YJ_ButdInit - give arg types
+  YJ_ButdCore * YJ_ButdInit();
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LM_BuoyantDevices.h(32): warning:  #1-D: last line of file ends without a newline
+  int32_t SetButdState(YJ_ButdCore * h, int32_t s);
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LMST_NodeCommon.h(100): warning:  #1295-D: Deprecated declaration YJ_IwdgInit - give arg types
+  void YJ_IwdgInit();
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LMST_DivingNode.h(4): warning:  #1-D: last line of file ends without a newline
+  void YJ_DivingNodeTask( void *parameters );
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LMST_DivingNode.c(110): warning:  #1-D: last line of file ends without a newline
+  }
+C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\User\LMST_DivingNode.c(86): warning:  #550-D: variable "ret" was set but never used
+  		int32_t 	ret = 1; 
+..\User\LMST_DivingNode.c: 6 warnings, 0 errors
+compiling stm32f10x_adc.c...
+compiling stm32f10x_bkp.c...
+compiling stm32f10x_can.c...
+compiling stm32f10x_cec.c...
+compiling stm32f10x_crc.c...
+compiling stm32f10x_dac.c...
+compiling stm32f10x_dbgmcu.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_exti.c...
+compiling stm32f10x_flash.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_fsmc.c...
+compiling stm32f10x_i2c.c...
+compiling stm32f10x_iwdg.c...
+compiling stm32f10x_pwr.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_rtc.c...
+compiling stm32f10x_sdio.c...
+compiling stm32f10x_spi.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_wwdg.c...
+compiling stm32f10x_tim.c...
+assembling cortexm3_macro_rvds.s...
+assembling STM32F10x.s...
+compiling core_cm3.c...
+compiling system_stm32f10x.c...
+linking...
+Program Size: Code=19500 RO-data=760 RW-data=148 ZI-data=16396  
+FromELF: creating hex file...
+After Build - User command #1: C:\Keil_v5\ARM\ARMCC\bin\fromelf.exe --bin -o  ./Objects/STM32_FreeRTOS.bin  ./Objects/STM32_FreeRTOS.axf
+".\Objects\STM32_FreeRTOS.axf" - 0 Error(s), 151 Warning(s).
+
+<h2>Collection of Component include folders:</h2>
+  C:\ten\share\workdir\LMST_Node\开发源码\lmst_node_user\prj\RTE
+  C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:10
+</pre>
+</body>
+</html>
