@@ -9,11 +9,11 @@
 
   <project>
     <PathAndName>..\lmst_node_bootloader\prj\STM32_FreeRTOS_Bootloader.uvprojx</PathAndName>
-    <NodeIsActive>1</NodeIsActive>
   </project>
 
   <project>
     <PathAndName>..\lmst_node_user\prj\STM32_FreeRTOS_User.uvprojx</PathAndName>
+    <NodeIsActive>1</NodeIsActive>
     <NodeIsExpanded>1</NodeIsExpanded>
   </project>
 

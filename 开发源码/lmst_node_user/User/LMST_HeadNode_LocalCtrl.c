@@ -170,6 +170,7 @@ static int32_t GetMpuData(YJ_MpuParam * p)
 	return 0;
 }
 
+//头舱自动控制demo任务
 void YJ_HeadNodeTask_LocalCtrl( void *parameters ) 
 {
 		int32_t 		ret = 1; 

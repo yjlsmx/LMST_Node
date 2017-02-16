@@ -51,26 +51,30 @@ int main(void)
 	
 	delay_ms(400);
 	
+	//初始化各功能模块
 	YJ_InitSystem();
 	
-	#if _LMST_NODE_TYPE == LMST_HEAD_NODE
-	MainTask = YJ_HeadNodeTask;
+	//根据不同的节点选择对应的线程任务函数
+	#if _LMST_NODE_TYPE == LMST_HEAD_NODE						
+	MainTask = YJ_HeadNodeTask;						//头舱
 	#elif _LMST_NODE_TYPE == LMST_HEAD_LOCAL_CTRL_NODE
-	MainTask = YJ_HeadNodeTask_LocalCtrl;
+	MainTask = YJ_HeadNodeTask_LocalCtrl;	//头舱自动控制demo
 	#elif _LMST_NODE_TYPE == LMST_TAIL_NODE
-	MainTask = YJ_TailNodeTask;
+	MainTask = YJ_TailNodeTask;						//摆动推进舱
 	#elif _LMST_NODE_TYPE == LMST_SERVO_MOTOR_NODE
-	MainTask = YJ_ServoMotorNodeTask;
+	MainTask = YJ_ServoMotorNodeTask;			//螺旋桨推进舱	
 	#elif _LMST_NODE_TYPE == LMST_SENSOR_NODE
-	MainTask = YJ_SensorNodeTask;
+	MainTask = YJ_SensorNodeTask;					//传感器舱
 	#elif _LMST_NODE_TYPE == LMST_DIVING_NODE
-	MainTask = YJ_DivingNodeTask;	
+	MainTask = YJ_DivingNodeTask;					//浮力舱
 	#endif
 
+	//启动节点主线程
 	xTaskCreate( MainTask, ( signed portCHAR * ) "MainTask", 
 		1024, NULL, 
 			LMST_NODE_TASK_PRIORITY, NULL);
-		
+	
+	//打开FreeRtos任务调度器
 	vTaskStartScheduler();
 	return 0;
 }
